@@ -1,5 +1,5 @@
 # Momentum-Clone
-Website made with Vanilla JS
+- Website made with Vanilla JS
 
 ## Demo Picture
 ![](demo.png)
