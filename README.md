@@ -1,8 +1,10 @@
 # Momentum-Clone
 - Website made with Vanilla JS
 
+## Demo Link
+
 ## Demo Picture
-![](demo.png)
+![](demo.gif)
 
 ## Project Description 
 This is the first webpage I created. It contains many functions. Enjoy!  
