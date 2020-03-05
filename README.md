@@ -5,7 +5,7 @@
 ## Demo Link
 https://wook2124.github.io/Momentum-Clone/
 
-## Demo Picture
+## Demo Video
 ![](demo.gif)
 
 ## Project Description 
