@@ -3,7 +3,7 @@ Website made with Vanilla JS
 - [Momentum](https://momentumdash.com/)
 
 ## Demo Link
-[Momentum-Clone](https://wook2124.github.io/Momentum-Clone/)
+- [Momentum-Clone](https://wook2124.github.io/Momentum-Clone/)
 
 ## Demo Video
 ![](demo.gif)
