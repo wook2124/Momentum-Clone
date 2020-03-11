@@ -25,4 +25,4 @@ Very simple. Download the project folder and execute index.html file.
 ## What I used for this project 
 - [X] HTML
 - [X] CSS
-- [X] Vanilla JS
+- [X] Vanilla JS 
