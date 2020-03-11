@@ -1,5 +1,5 @@
 # Momentum-Clone
-- Website made with Vanilla JS
+Website made with Vanilla JS
 - [Momentum](https://momentumdash.com/)
 
 ## Demo Link
