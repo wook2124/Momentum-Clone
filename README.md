@@ -1,9 +1,9 @@
 # Momentum-Clone
-- https://momentumdash.com/
 - Website made with Vanilla JS
+- [Momentum](https://momentumdash.com/)
 
 ## Demo Link
-https://wook2124.github.io/Momentum-Clone/
+[Momentum-Clone](https://wook2124.github.io/Momentum-Clone/)
 
 ## Demo Video
 ![](demo.gif)
@@ -11,7 +11,7 @@ https://wook2124.github.io/Momentum-Clone/
 ## Project Description 
 This is the first webpage I created. It contains many functions. Enjoy!  
 제가 처음 만든 웹페이지입니다. 여러기능들은 아래의 feature를 참고해주세요.
-### Feature 
+### `Feature`
 - Clocks (시계기능)
 - Greetings (환영인사)
 - Work-to-do (To do list, 할 일 적기)
