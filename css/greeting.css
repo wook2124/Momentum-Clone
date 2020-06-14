@@ -1,0 +1,38 @@
+.js-form {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.form-section span {
+    font-size: 5em;
+    opacity: 0.9;
+}
+
+.form-section input {
+    border: none;
+    background: none;
+    font-size: 4em;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.form-section input::placeholder {
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.form-section input:focus,
+.form-section input:active {
+    outline: white;
+    text-align: center;
+}
+
+.form-section input:focus::placeholder {
+    color: transparent;
+}
