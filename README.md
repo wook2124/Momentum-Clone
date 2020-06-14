@@ -27,7 +27,7 @@ This is the first web page created by cloning. Refer to the `Feature` below for 
 ## Customization: How to run this project
 
 Very simple. Click [Momentum-Clone](https://wook2124.github.io/Momentum-Clone/) and Enjoy!   
-위 링크를 클릭하고 사용하면됩니다.
+위 링크를 클릭하고 사용하면 됩니다.
 
 ## What I used for this project 
 
