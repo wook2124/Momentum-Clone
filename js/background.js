@@ -1,5 +1,5 @@
 const body = document.querySelector("body")
-const IMAGE_COUNT = 3
+const IMAGE_COUNT = 13
 
 function getRandom() {
     return Math.floor(Math.random() * IMAGE_COUNT)
