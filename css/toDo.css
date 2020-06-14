@@ -1,0 +1,54 @@
+.todo-section input {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid white;
+    opacity: 0.8;
+    color: white;
+    font-size: 2rem;
+}
+
+.todo-section input::placeholder {
+    text-align: center;
+    color: white;
+}
+
+.todo-section input:focus,
+.todo-section input:active {
+    text-align: center;
+    outline: none;
+}
+
+.todo-section input:focus::placeholder {
+    color: transparent;
+}
+
+.todo-section .js-todo-list {
+    text-align: center;
+    opacity: 0.95;
+    font-size: 2rem;
+    list-style: none;
+}
+
+.js-todo-list li {
+    display: flex;
+}
+
+.js-todo-list li span {
+    flex: auto;
+}
+
+.js-todo-list li button {
+    margin-left: 15px;
+    background: none;
+    font-size: 1rem;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    outline: none;
+}
