@@ -1,0 +1,262 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+  
+  .input {
+    width: inherit;
+    font-size: 3rem;
+    text-align: center;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #ffffff;
+  }
+  
+  input,
+  textarea {
+    background: 0;
+  }
+  
+  .input--todo {
+    width: 70%;
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  ::placeholder {
+    color: #ffffff;
+  }
+  
+  .button {
+    all: unset;
+    cursor: pointer;
+    background-color: black;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:active,
+  .button--del:active,
+  .button--check:active {
+    transform: scale(0.9);
+  }
+  
+  .button--todo {
+    width: 80px;
+    font-size: 2rem;
+    opacity: 0.7;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 첫 번째 화면 */
+  
+  .whats-your-name__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 1.5s linear forwards;
+  }
+  
+  .icon {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+  }
+  
+  .whats-your-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .whats-your-name__text {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Disappears */
+  .whats-your-name__container.disappear {
+    display: none;
+  }
+  
+  .greeting__container.disappear {
+    display: none;
+  }
+  
+  .main-focus__input-container.disappear {
+    display: none;
+  }
+  
+  .main-focus__showing-container.disappear {
+    display: none;
+  }
+  
+  .todo__container.disappear {
+    display: none;
+  }
+  /* 두 번째 화면 */
+  
+  .greeting__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 70px;
+    animation: fadeIn 1.5s linear forwards;
+  }
+  
+  .weather {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .time {
+    font-size: 14rem;
+  }
+  
+  .greeting__greet-and-name {
+    margin-bottom: 50px;
+  }
+  
+  .greet,
+  .name,
+  .sir {
+    font-size: 3rem;
+  }
+  
+  .sir {
+    margin-left: 10px;
+  }
+  
+  .greeting__main-focus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-focus__input-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .question {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .main-focus__showing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input--checkbox {
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-right: 5px;
+  }
+  
+  .greeting__main-focus-text {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+  
+  .greeting__main-focus-compliment {
+    font-size: 1.5rem;
+  }
+  
+  :checked {
+    transform: scale(0.98);
+  }
+  
+  /* 세 번째 화면 with To Do List */
+  .todo__container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .form--todo {
+    margin-bottom: 30px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .button--del,
+  .button--check {
+    all: unset;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.7;
+    background-color: none;
+  }
+  
+  .button--check {
+    margin-right: 5px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+  }
