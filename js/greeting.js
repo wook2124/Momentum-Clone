@@ -26,7 +26,7 @@ function showName(userNow) {
 
     const title = document.createElement('span')
     title.classList.add("title__span")
-    title.innerText = `Hello, ${userNow}` // {Hello}??? ????? ???? ?? ?? ????
+    title.innerText = `Hello, ${userNow}`
     container.appendChild(title)
 }
 
