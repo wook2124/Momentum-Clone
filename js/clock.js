@@ -1,19 +1,18 @@
-const clockContainer = document.querySelector(".js-clock"),
-  clockTitle = clockContainer.querySelector("h1");
+const currentTime = document.querySelector("#js-current-time");
 
-function getTime() {
+function getCurrentTime() {
   const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-    }:${seconds < 10 ? `0${seconds}` : seconds}`;
+  const hour = date.getHours();
+  const minute = date.getMinutes();
+
+  currentTime.textContent = `${hour < 10 ? `0${hour}` : hour}:${
+    minute < 10 ? `0${minute}` : minute
+  }`;
+
+  greetingMessage(hour); // greeting.js(for different greet message)
 }
 
-function init() {
-  getTime();
-  setInterval(getTime, 1000);
+if (currentTime) {
+  getCurrentTime();
+  setInterval(getCurrentTime, 1000);
 }
-
-init();
