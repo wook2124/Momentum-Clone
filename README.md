@@ -26,8 +26,8 @@ This is my first web page. Refer to the features below for various functions.
 
 ## Customization: How to run this project
 
-Very simple. Download the project to your local computer and click the index.html file to get started.  
-프로젝트를 로컬컴퓨터에 다운로드 하신후 index.html 파일을 클릭하시면 실행 가능합니다. 
+Very simple. Click [Momentum-Clone](https://wook2124.github.io/Momentum-Clone/) and Enjoy!   
+위 링크를 클릭하고 원하는 직업을 검색하면 됩니다. 
 
 ## What I used for this project 
 
