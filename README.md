@@ -13,8 +13,8 @@ Website made with Vanilla JS
 
 ## Project Description 
 
-This is the first web page created by cloning. Refer to the features below for the functions.  
-클론해서 만든 첫 웹페이지입니다. 기능들은 아래 feature를 참고해주세요.
+This is the first web page created by cloning. Refer to the `Feature` below for the functions.  
+클론해서 만든 첫 웹페이지입니다. 기능들은 아래 `Feature`를 참고해주세요.
 
 ### `Feature`
 
