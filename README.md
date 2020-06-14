@@ -13,8 +13,8 @@ Website made with Vanilla JS
 
 ## Project Description 
 
-This is my first web page. Refer to the features below for various functions.  
-제가 처음 만든 웹페이지입니다. 여러기능들은 아래 feature를 참고해주세요.
+This is the first web page created by cloning. Refer to the features below for the functions.  
+클론해서 만든 첫 웹페이지입니다. 기능들은 아래 feature를 참고해주세요.
 
 ### `Feature`
 
@@ -27,7 +27,7 @@ This is my first web page. Refer to the features below for various functions.
 ## Customization: How to run this project
 
 Very simple. Click [Momentum-Clone](https://wook2124.github.io/Momentum-Clone/) and Enjoy!   
-위 링크를 클릭하고 원하는 직업을 검색하면 됩니다. 
+위 링크를 클릭하고 사용하면됩니다.
 
 ## What I used for this project 
 
