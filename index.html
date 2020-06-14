@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>Momentum-Clone</title>
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Jua"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="all">
-      <div class="js-clock">
-        <h1>00:00</h1>
-      </div>
-      <form class="js-form form showing">
-        <input type="text" placeholder="What is your name?" />
-      </form>
-      <h4 class="js-greeting greeting"></h4>
-      <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-      </form>
-      <ul class="js-toDoList">
-      </ul>
+    <div class="js-clock">
+      <h1>00:00</h1>
     </div>
-    <span class="js-weather"></span>
+    <form class="js-form form">
+      <input type="text" placeholder="What is your name?" />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do😉" />
+    </form>
+    <ul class="js-toDoList"></ul>
+    <div class="wrapper">
+      <button class="js-toDoDelete">All DEL</button>
+    </div>
     <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="toDo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+    <script src="gretting.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
