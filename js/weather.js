@@ -1,42 +1,57 @@
-const weatherText = document.querySelector("#js-weather");
+const weather = document.querySelector(".js-weather");
+
 const API_KEY = "ded8b1690ab3da1a4ef762795e744b2f";
 const COORDS = "coords";
 
-function setWeather() {
-  const coords = loadCoords();
-  const lat = coords.lat;
-  const lon = coords.lon;
+function getWeather(lat, lon) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   )
-    .then((res) => {
-      return res.json();
+    .then(function(response) {
+      return response.json();
     })
-    .then((result) => {
-      const temp = result.main.temp;
-      const name = result.name;
-      weatherText.textContent = `${temp}℃, ${name}`;
-    })
-    .catch((err) => {
-      console.log(err);
+    .then(function(json) {
+      const temperature = json.main.temp;
+      const place = json.name;
+      weather.innerText = `온도: ${temperature} @ 장소: ${place}`;
     });
 }
 
-function storeCoords(lat, lon) {
-  const coordsObj = { lat: lat, lon: lon };
+function saveCoords(coordsObj) {
   localStorage.setItem(COORDS, JSON.stringify(coordsObj));
-  setWeather();
+}
+
+function handleGeoSuccess(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const coordsObj = {
+    latitude: latitude,
+    longitude: longitude
+  };
+  saveCoords(coordsObj);
+  getWeather(latitude, longitude);
+}
+
+function handleGeoError(position) {
+  console.log("Can't access geo location");
+}
+
+function askForCoords() {
+  navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 }
 
 function loadCoords() {
-  const loadCoords = localStorage.getItem(COORDS);
-  return JSON.parse(loadCoords);
+  const loadedCoords = localStorage.getItem(COORDS);
+  if (loadedCoords === null) {
+    askForCoords();
+  } else {
+    const parsedCoords = JSON.parse(loadedCoords);
+    getWeather(parsedCoords.latitude, parsedCoords.longitude);
+  }
 }
 
-if (loadCoords() === null) {
-  window.navigator.geolocation.getCurrentPosition((res) => {
-    storeCoords(res.coords.latitude, res.coords.longitude);
-  });
-} else {
-  setWeather();
+function init() {
+  loadCoords();
 }
+
+init();
