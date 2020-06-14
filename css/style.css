@@ -1,68 +1,47 @@
-  
-h1{ /*시계*/
-  text-align: center;
-  background-color:transparent ;
-  color:#74b9ff;
-  font-size: 50px;
-  margin-top: 15%;
-  font-family: 'Fredoka One', cursive;
+html, body {
+  width: 100%;
+  height: 100%;
 }
-span{ /*리스트*/
-  font-size: 35px;
-  font-family: 'Black Han Sans', sans-serif;
-  color:#dcdde1;
+
+body {
+   background-color: black;
 }
-body{ /*배경 랜덤으로 바뀌는것 지정*/
-  background-image: url("https://source.unsplash.com/random");
-  background-size: cover;
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.form,
-.greetings{
-  display: none;
-}
-.showing{
-  display: block;
-}
-form{
-  text-align: center;
-}
-h4{ /*이름표시*/
-  text-align: center;
-  font-family: 'Jua', sans-serif;
-  font-size: 30px;
-  color:#00b894;
-}
-ul{ /*목록 가운데로*/
-  text-align: center;
-  list-style: none;
-}
-.wrapper{ /*버튼*/
-  text-align: center;
-}
-input[type=text]{ /*할일 및 이름 css*/
-  text-align: center;
-  width:50%;
-  height:50px;
-  border:none;
-  border-bottom:2px solid #dfe6e9;
-  font-size:30px;
-  background-color:transparent;
-}
-input::placeholder{ /*할 일을 적으세요 CSS */
-  color:#e17055;
-  opacity: 0.5;
-}
-.js-toDoDelete{ /*all delete css*/
-  background-color: #c0392b;
+
+.clock-text {
   color: white;
-  border: 3px solid #c0392b;
-  font-size: 20px;
-  padding: 10px 40px;
+  font-size: 6rem;
 }
-.listDelete{ /*리스트의 삭제 css*/
-  background-color: white;
-  color: black;
-  border: 3px solid #e74c3c;
-  margin: 5px;
-  font-size: 20px;
+
+.form {
+  margin-top: 30px;
+}
+
+.user-name {
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+}
+
+::placeholder {
+  color: white;
+}
+
+.hello-message {
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
