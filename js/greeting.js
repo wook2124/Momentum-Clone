@@ -1,45 +1,43 @@
-const form = document.querySelector(".js-form"), 
-    input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings");
+const whatsYourContainer = document.querySelector('#js-whats-your-container');
+const nameForm = document.querySelector('#js-name-form');
+const nameInput = document.querySelector('#js-name-input');
+let userName = '';
 
-const USER_LS = "currentUser",
- SHOWING_CN = "showing";
+const greetContainer = document.querySelector('#js-greeting-container');
+const greetText = document.querySelector('#js-greet-text');
+const nameText = document.querySelector('#js-name');
 
-function saveName(text){
-    localStorage.setItem(USER_LS,text);
+function greetingMessage(hour) {
+  if (hour > 5 && hour < 11) {
+    greetText.textContent = '좋은 아침이에요.';
+  } else if (hour >= 11 && hour < 14) {
+    greetText.textContent = '벌써 점심이에요.';
+  } else if (hour >= 14 && hour < 17) {
+    greetText.textContent = '좋은 오후네요.';
+  } else if (hour >= 17 && hour < 23) {
+    greetText.textContent = '좋은 저녁이에요.';
+  } else {
+    greetText.textContent = '오늘도 고생 많았어요.';
+  }
 }
 
-function handleSubmit(event){
-    event.preventDefault(); // 이벤트 전송을 막음 (form전송을 제한함)
-    const currentValue = input.value;
-    paintGreeting(currentValue);
-    saveName(currentValue);
+function whatsyourGreetContainerToggle() {
+  whatsYourContainer.classList.add('disappear');
+  greetContainer.classList.remove('disappear');
 }
 
- function askForName(){ // 사용자에게 이름을 물어봄
-    form.classList.add(SHOWING_CN);
-    form.addEventListener("submit",handleSubmit)
- }
+if (localStorage.userName) {
+  // has user name
+  whatsyourGreetContainerToggle();
+  nameText.textContent = localStorage.userName;
+} else {
+  // don't have user name
+  nameForm.addEventListener('submit', e => {
+    e.preventDefault();
 
-function paintGreeting(text){ // 폼을 없애고 사용자 이름을 h4태그에 담음
-    form.classList.remove(SHOWING_CN);
-    greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}!`
+    userName = nameInput.value;
+    localStorage.setItem('userName', userName);
+    whatsyourGreetContainerToggle();
+    nameText.textContent = localStorage.userName;
+  });
 }
-
-function  loadName(){
-    const currentUser = localStorage.getItem(USER_LS); 
-    if(currentUser === null){
-        // 유저가 없을경우
-        askForName();
-    } else{
-        // 유저가 있을경우
-        paintGreeting(currentUser); // 유저이름을 보여줌
-    }
-}
-
-function init(){
-    loadName();
-}
-
-init();
