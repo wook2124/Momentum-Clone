@@ -14,11 +14,12 @@
 .form-section input {
     border: none;
     background: none;
-    font-size: 4em;
+    font-size: 200%;
     border-bottom: 3px solid rgba(255, 255, 255, 0.8);
     color: white;
     opacity: 0.9;
     margin-bottom: 20px;
+    margin-top:20px;
 }
 
 .form-section input::placeholder {
