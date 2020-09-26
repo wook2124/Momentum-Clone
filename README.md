@@ -33,4 +33,4 @@ Very simple. Click [Momentum-Clone](https://wook2124.github.io/Momentum-Clone/) 
 
 - [X] HTML
 - [X] CSS
-- [X] Vanilla JS 
+- [X] JavaScript
